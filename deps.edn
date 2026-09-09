@@ -1,0 +1,10 @@
+{:paths ["src"]
+ :deps {
+        io.github.kotoba-lang/coll-rename-keys
+        {:git/url "https://github.com/kotoba-lang/coll-rename-keys.git"
+         :git/sha "8dd3ed02eba54465a5e8670b1a18e28d0995e265"}}
+ :aliases
+ {:test {:extra-paths ["test"]
+         :extra-deps {io.github.cognitect-labs/test-runner
+                      {:git/tag "v0.5.1" :git/sha "dfb30dd"}}
+         :main-opts ["-m" "cognitect.test-runner"]}}}
